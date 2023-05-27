@@ -8,6 +8,8 @@ const foodSpotSchema = new mongoose.Schema(
         experience: {type: String, required: true},
         tips: [String],
         foodImages: [String]
-        
+
     }, {timestamps:true}
 )
+const FoodSpot = mongoose.model('FoodSpot', foodSpotSchema);
+module.exports = FoodSpot
