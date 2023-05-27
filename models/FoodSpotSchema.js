@@ -7,6 +7,8 @@ const foodSpotSchema = new mongoose.Schema(
         state: {type: String, required: true},
         cuisine: {type: String, required: true},
         price: {type: String, required: true},
+        serviceRating: Number,
+        ambianceRating: Number, 
         experience: {type: String, required: true},
         tips: [String],
         foodImages: [String]
