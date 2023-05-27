@@ -39,6 +39,7 @@ app.get('/', async (req, res) => {
 app.post('/foodspots', async (req, res) => {
     try {
         const createdSpot = await FoodSpot.create(req.body)
+        res.json(createdSpot)
     } catch (err) {
         console.log(err)
     }
