@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 mongoose.connect(URI)
 mongoose.connection.once('open', () => {
-    console.log('connection to MongoDB established.')
+    console.log('Connection to MongoDB established.')
 });
 
 // Connect to local host 4000
